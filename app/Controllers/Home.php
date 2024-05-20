@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ArtikelModel;
 use App\Models\KategoriModel;
 use App\Models\KontakModel;
+use App\Models\TentangkamiModel;
 
 class Home extends BaseController
 {
@@ -38,5 +39,10 @@ class Home extends BaseController
     {
         $data['title'] = 'detailkat';
         return view('kategori/detailkat',$data);
+    }
+    public function tentangkami()
+    {
+        $data['title'] = 'tentangkami';
+        return view('tentangkami',$data);
     }
 }

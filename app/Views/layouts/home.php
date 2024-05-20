@@ -53,6 +53,11 @@
 
 <body>
     <!-- top-area Start -->
+    <style>
+        .nav-item.active .nav-link {
+            color: #03C988;
+        }
+    </style>
     <section class="top-area sticky-top">
         <div class="header-area ">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -63,14 +68,14 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" style="margin-left: 80%;">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/beranda">Beranda</a>
+                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/beranda') ? 'active' : ''; ?>"">
+                                    <a class="nav-link fs-6" aria-current="page" href="/beranda">Beranda</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/tiket">Tiket</a>
+                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tiket') ? 'active' : ''; ?>"">
+                                    <a class="nav-link fs-6" href="/tiket">Tiket</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Tentang kami</a>
+                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tentangkami') ? 'active' : ''; ?>"">
+                                    <a class="nav-link fs-6" href="/tentangkami">Tentang kami</a>
                                 </li>
                             </ul>
                         </div>

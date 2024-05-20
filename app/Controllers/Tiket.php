@@ -28,9 +28,6 @@ class Tiket extends BaseController
         $data = [
             'nama_kontak' => $this->request->getPost('nama_kontak'),
             'email' => $this->request->getPost('email'),
-            'modul' => $this->request->getPost('modul'),
-            'klasifikasi' => $this->request->getPost('klasifikasi'),
-            'prioritas' => $this->request->getPost('prioritas'),
             'subjek' => $this->request->getPost('subjek'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             // 'email' => $this->request->getPost('status'),

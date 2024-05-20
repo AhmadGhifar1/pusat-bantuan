@@ -44,6 +44,12 @@ Kategori
     <!--list-topics end-->
 
     <!--works start -->
+
+
+
+
+
+
     <section id="works" class="works">
         <div class="container">
             <div class="section-header">
@@ -67,20 +73,6 @@ Kategori
                                     </div>
                                     <!-- </li> -->
                                     <!-- </td> -->
-                                </tr>
-                                <tr>
-                                    <!-- <td> -->
-                                    <!-- <h2><a href="#">lorem <span> ipsum </span> di</a></h2> -->
-                                    <!-- <li> -->
-                                    <div class="single-list-topics-content2">
-                                        <div class="single-list-topics-icon2">
-                                            <i class="flaticon-building"></i>
-                                        </div>
-                                        <div class="artikel1">
-                                            <h2><a href="#">GoldStep Lab</a></h2>
-                                        </div>
-                                    </div>
-
                                 </tr>
                             </tbody>
                         </table>
@@ -154,56 +146,55 @@ Kategori
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- </div> -->
+        <!-- </div> -->
 
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
+
         </div>
 
-    </div>
+        <!-- </div> -->
 
-    <!-- </div> -->
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
 
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-        </div>
+        </div><!--/.scroll-Top-->
 
-    </div><!--/.scroll-Top-->
+        </footer><!--/.footer-->
+        <!--footer end-->
 
-    </footer><!--/.footer-->
-    <!--footer end-->
+        <!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+        <script src="assets/js/jquery.js"></script>
 
-    <script src="assets/js/jquery.js"></script>
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <!--modernizr.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
 
-    <!--bootstrap.min.js-->
-    <script src="assets/js/bootstrap.min.js"></script>
+        <!-- bootsnav js -->
+        <script src="assets/js/bootsnav.js"></script>
 
-    <!-- bootsnav js -->
-    <script src="assets/js/bootsnav.js"></script>
+        <!--feather.min.js-->
+        <script src="assets/js/feather.min.js"></script>
 
-    <!--feather.min.js-->
-    <script src="assets/js/feather.min.js"></script>
+        <!-- counter js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
 
-    <!-- counter js -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
+        <!--slick.min.js-->
+        <script src="assets/js/slick.min.js"></script>
 
-    <!--slick.min.js-->
-    <script src="assets/js/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-    <!--Custom JS-->
-    <script src="assets/js/custom.js"></script>
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
 
 </body>
 <?php $this->endSection() ?>

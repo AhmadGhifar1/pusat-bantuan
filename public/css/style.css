@@ -174,12 +174,12 @@ nav.navbar.bootsnav {
     background-color:#fff;
     border-bottom: transparent;
 }
-.wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
+.wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px #03C988;}
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #1b1e20;
+    color: #03C988;
     font-size: 20px;
     font-weight: 700;
     padding: 34px 0px;
@@ -192,7 +192,7 @@ nav.navbar.bootsnav {
 
 /*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
-    color: #859098;
+    color: #03C988;
     font-size: 14px;
     font-weight: 500;
     text-transform:uppercase;
@@ -202,9 +202,9 @@ nav.navbar.bootsnav ul.nav > li > a {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding:34px 21px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #ff545a;}
-nav.navbar.bootsnav ul.nav > li.active>a {color: #ff545a;}
+nav.navbar.nav ul.nav > li > a {padding:34px 21px;}
+nav.navbar.nav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #ff545a;}
+nav.navbar.nav ul.nav > li.active>a {color: #03C988;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -394,7 +394,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     /* flex-direction: column; */
     /* justify-content: center; */
     width: 800px;
-    height: 1100px;
+    height: auto;
     background:#fff;
     border-radius: 3px;
     margin-right: 15px;
@@ -588,7 +588,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     padding: 26px 25px 24px 15px;
 }
 .single-explore-txt.bg-theme-1 .explore-rating{background: #70a9ff;}
-.single-explore-txt.bg-theme-2 .explore-rating{background: #00c61c;}
+.single-explore-txt.bg-theme-2 .explore-rating{background: #03C988;}
 .single-explore-txt.bg-theme-3 .explore-rating{background: #ffcc5d;}
 .single-explore-txt.bg-theme-4 .explore-rating{background: #bd70ff;}
 .single-explore-txt.bg-theme-5 .explore-rating{background: #ff7a40;}

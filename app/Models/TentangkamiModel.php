@@ -4,20 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class TiketModel extends Model
+class TentangkamiModel extends Model
 {
-    protected $table            = 'tiket';
+    protected $table            = 'tentang_kami';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_kontak','email','subjek','deskripsi','status'];
-
-    public function kontak()
-    {
-        return $this->belongsTo(KontakModel::class, 'id', 'id');
-    }
+    protected $allowedFields    = ['judul','deskripsi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

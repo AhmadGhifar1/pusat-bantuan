@@ -73,6 +73,7 @@ Beranda
                                 <div class="single-list-topics-icon">
                                     <i class="flaticon-restaurant"></i>
                                 </div>
+                                
                                 <h2><a href="/kategori"><?= $list['nama_kategori'] ?></a></h2>
                                 <p><?= $list['deskripsi_kategori'] ?></p>
                             </div>
@@ -95,9 +96,9 @@ Beranda
             <div class="container-fluid mt-4">
                 <div class="row">
                     <?php foreach ($artikel as $list) : ?>
-                        <div class="col-5">
+                        <div class="col-4">
                             <a href="" style="text-decoration: none">
-                                <div class="card shadow">
+                                <div class="card shadow" style="margin-top: 40px;">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-4 d-flex align-items-center">
@@ -197,7 +198,7 @@ Beranda
                     <div class="col-4">
                         <div class="col-7 text-center">
                             <p class="txt p-0 m-0 fs-5 fw-bold">Informasi</p>
-                            <div class="col-15 p-2">
+                            <div class="col-12 p-2">
                                 <a href="">
                                     <p class="txt p-0 m-0 fs-5 pb-2 text-decoration-underline">Pusat Bantuan</p>
                                 </a>
@@ -211,9 +212,9 @@ Beranda
                         </div>
                     </div>
                     <div class="col-4 d-flex justify-content-center">
-                        <div class="col-10 text-center justify-content-center">
+                        <div class="col-10 justify-content-center" style="margin-right: 50px;">
                             <p class="txt p-0 m-0 fs-5 fw-bold">Contact</p>
-                            <div class="col-15 p-2 text-start">
+                            <div class="col-15 p-2 text-start" style="margin-right: 25px;">
                                 <p class="txt p-0 m-0 fs-5 pb-2"><?= $list['email'] ?></p>
                                 <p class="txt p-0 m-0 fs-5 pb-2"><?= $list['nomor_telepon'] ?></p>
                                 <p class="txt p-0 m-0 fs-6"><?= $list['alamat'] ?></p>

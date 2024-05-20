@@ -1,7 +1,7 @@
 <?php $this->extend('layouts/home') ?>
 
 <?php $this->section('layouts') ?>
-Kategori
+Tiket
 <?php $this->endSection() ?>
 <?php $this->section('content') ?>
 
@@ -35,6 +35,10 @@ Kategori
                     </div>
                 </div>
             </div>
+            <div style="display: flex; margin-left: 8%;">
+                <a href="/beranda" style="color: #FFFFFF;">Beranda \ </a>
+                <a href="/beranda" style="color: #FFFFFF;"> Tiket</a>
+            </div>
         </div>
 
     </section><!--/.welcome-hero-->
@@ -62,20 +66,14 @@ Kategori
                                                 <h4 class="fw-bold" style="margin-top: 30px;">Kontak Information</h4>
                                                 </p>
                                                 <label for="nama_kontak" style="font-size: 15px; margin-top: 20px; color: black;" required>Nama Kontak</label>
-                                                <input type="text" class="form-control" id="nama_kontak" name="nama_kontak" placeholder="Nama kontak">
+                                                <input type="text" class="form-control" id="nama_kontak" name="nama_kontak" style="margin-top: 10px;" placeholder="Nama kontak">
                                                 <label for="email" style="font-size: 15px; margin-top: 20px; color: black;" required>Email</label>
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                                <input type="email" class="form-control" id="email" name="email" style="margin-top: 10px;" placeholder="Email">
                                                 <h4 class="fw-bold" style="margin-top: 20px;">Tiket Informasi</h4>
-                                                <label for="modul" style="font-size: 15px; margin-top: 20px; color: black;" required>Modules</label>
-                                                <input type="text" class="form-control" id="modul" name="modul" placeholder="Modules">
-                                                <label for="klasifikasi" style="font-size: 15px; margin-top: 20px; color: black;" required>Klasifikasi</label>
-                                                <input type="text" class="form-control" id="klasifikasi" name="klasifikasi" placeholder="Klasifikasi">
-                                                <label for="prioritas" style="font-size: 15px; margin-top: 20px; color: black;" required>Prioritas</label>
-                                                <input type="text" class="form-control" id="prioritas" name="prioritas" placeholder="Prioritas">
                                                 <label for="subjek" style="font-size: 15px; margin-top: 20px; color: black;" required>Subjek</label>
-                                                <input type="text" class="form-control" id="subjek" name="subjek" placeholder="Subjek">
-                                                <label for="deskripsi" style="font-size: 15px; margin-top: 20px; color: black;" required>Deskripsi</label>
-                                                <input type="text" style="height: 30%;" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi">
+                                                <input type="text" class="form-control" id="subjek" name="subjek" style="margin-top: 10px;" placeholder="Subjek">
+                                                <label for="subjek" style="font-size: 15px; margin-top: 20px; color: black;" required>Deskripsi</label>
+                                                <textarea class="form-control" placeholder="deskripsi" id="deskripsi" name="deskripsi" style="height: 300px; margin-top: 10px;"></textarea>
                                                 <button type="submit" style="margin-top: 10px; background-color: #03C988; width: 70px; height: 40px; border-radius: 7px; color: #FFFFFF; font-size: medium;">Kirim</button>
                                             </form>
                                         </div>
@@ -84,24 +82,7 @@ Kategori
                             </tbody>
                         </table>
                     </div>
-                    <!-- <div class="col-md-4 col-sm-6">
-                        <h2><a href="#">lorem <span> ipsum </span></a></h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
-                            ut laboremagna aliqua.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-                            read more
-                        </button>
-                    </div>
-                    <h2><a href="#">lorem <span> ipsum</span> place</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
-                        ut laboremagna aliqua.
-                    </p>
-                    <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-                        read more
-                    </button> -->
+
                 </div>
             </div>
         </div>
