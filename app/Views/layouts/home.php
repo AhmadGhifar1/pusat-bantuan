@@ -60,32 +60,34 @@
     </style>
     <section class="top-area sticky-top">
         <div class="header-area ">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">Gold<span>Step</span></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" style="margin-left: 80%;">
-                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/beranda') ? 'active' : ''; ?>"">
-                                    <a class="nav-link fs-6" aria-current="page" href="/beranda">Beranda</a>
-                                </li>
-                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tiket') ? 'active' : ''; ?>"">
-                                    <a class="nav-link fs-6" href="/tiket">Tiket</a>
-                                </li>
-                                <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tentangkami') ? 'active' : ''; ?>"">
-                                    <a class="nav-link fs-6" href="/tentangkami">Tentang kami</a>
-                                </li>
-                            </ul>
-                        </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Gold<span>Step</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" style="margin-left: 80%;">
+                            <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/beranda') ? 'active' : ''; ?>"">
+                                    <a class=" nav-link fs-6" aria-current="page" href="/beranda">Beranda</a>
+                            </li>
+                            <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tiket') ? 'active' : ''; ?>"">
+                                    <a class=" nav-link fs-6" href="/tiket">Tiket</a>
+                            </li>
+                            <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/tentangkami') ? 'active' : ''; ?>"">
+                                    <a class=" nav-link fs-6" href="/tentangkami">Tentang kami</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-                <!-- End Navigation -->
+                </div>
+            </nav>
+            <!-- End Navigation -->
         </div><!--/.header-area-->
         <div class="clearfix"></div>
 
     </section><!-- /.top-area-->
+
+
     <!-- top-area End -->
 
     <div id="scroll-Top">
@@ -133,5 +135,64 @@
     <script src="assets/js/custom.js"></script>
 
 </body>
+<div class="col-12">
+    <div class="col-1">
+        <div class="card" style="width: 1500px; height: 260px; border: 1px solid rgb(229, 234, 239);">
+            <div class="card-body d-flex">
+                <div class="col-4">
+                    <div class="col d-flex justify-content-center gap-3">
+                        <div class="col-2 text-center d-flex justify-content-center st-1">
+                            <div class="lingkaran p-2">
+                                <a href="">
+                                    <i class="fa fa-whatsapp text-light" style="font-size: 36px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center d-flex justify-content-center st-1">
+                            <div class="lingkaran p-2">
+                                <a href="">
+                                    <i class="fa fa-instagram text-light" style="font-size: 36px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-center mt-4">
+                        <p class="txt m-0 p-0">PT.GoldStep Teknologi Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-7 text-center">
+                        <p class="txt p-0 m-0 fs-5 fw-bold">Informasi</p>
+                        <div class="col-15 p-2">
+                            <a href="">
+                                <p class="txt p-0 m-0 fs-5 pb-2 text-decoration-underline">Pusat Bantuan</p>
+                            </a>
+                            <a href="">
+                                <p class="txt p-0 m-0 fs-5 pb-2 text-decoration-underline">Privacy Policy</p>
+                            </a>
+                            <a href="">
+                                <p class="txt p-0 m-0 fs-5 text-decoration-underline">Terms & Condition</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="col-10 text-center justify-content-center">
+                        <p class="txt p-0 m-0 fs-5 fw-bold">Contact</p>
+                        <div class="col-15 p-2 text-start">
+                            <p class="txt p-0 m-0 fs-5 pb-2">goldstep@gmail.com</p>
+                            <p class="txt p-0 m-0 fs-5 pb-2">+6281222188524</p>
+                            <p class="txt p-0 m-0 fs-6">Taman Kopo Indah 3, Ruko D35 Bandung, Indonesia, 40128</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer col-12 d-flex justify-content-center pt-3">
+                <p class="txt p-0 m-0 text-light fw-bold fs-4"> GoldStep</p>
+                <p class="txt ps-5 m-0 text-light fs-5"> Copyright 2024 PT.Goldstep Teknologi Indonesia</p>
+            </div>
+        </div>
+    </div>
+
 
 </html>

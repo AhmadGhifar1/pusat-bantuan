@@ -6,6 +6,7 @@ use App\Models\ArtikelModel;
 use App\Models\KategoriModel;
 use App\Models\KontakModel;
 use App\Models\TentangkamiModel;
+use App\Models\TiketModel;
 
 class Home extends BaseController
 {
@@ -35,14 +36,17 @@ class Home extends BaseController
         $data['title'] = 'tiket';
         return view('tiket/tiket',$data);
     }
-    public function detailkat()
+    public function subkategori()
     {
-        $data['title'] = 'detailkat';
-        return view('kategori/detailkat',$data);
+        $data['title'] = 'subkategori';
+        return view('kategori/subkategori',$data);
     }
     public function tentangkami()
     {
         $data['title'] = 'tentangkami';
         return view('tentangkami',$data);
     }
+
+    
+    
 }

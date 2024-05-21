@@ -14,11 +14,6 @@ class TiketModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['nama_kontak','email','subjek','deskripsi','status'];
 
-    public function kontak()
-    {
-        return $this->belongsTo(KontakModel::class, 'id', 'id');
-    }
-
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
 

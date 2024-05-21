@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ArtikelModel;
+use App\Models\KontakModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Artikel extends BaseController
@@ -17,6 +18,9 @@ class Artikel extends BaseController
     {
         $artikel = new ArtikelModel();
         $data ['artikel'] = $artikel->findAll();
+        $kontak = new KontakModel();
+        $data ['kontak'] = $kontak->findAll();
+        
         return view('beranda',$data);
     }
 }
