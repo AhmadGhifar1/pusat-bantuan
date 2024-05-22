@@ -20,7 +20,12 @@ class Artikel extends BaseController
         $data ['artikel'] = $artikel->findAll();
         $kontak = new KontakModel();
         $data ['kontak'] = $kontak->findAll();
-        
         return view('beranda',$data);
+
+        $list = [
+            'tanggal_unggah' => new \DateTime('2024-05-22') // Pastikan ini adalah objek DateTime
+        ];
+
+        return view('beranda', ['list' => $list]);
     }
 }

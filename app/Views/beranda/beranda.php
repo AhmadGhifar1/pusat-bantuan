@@ -73,9 +73,8 @@ Beranda
                                 <div class="single-list-topics-icon">
                                     <i class="flaticon-restaurant"></i>
                                 </div>
-                                
                                 <h2><a href="/kategori"><?= $list['nama_kategori'] ?></a></h2>
-                                <p><?= $list['deskripsi_kategori'] ?></p>
+                                <p style="text-align: center;"><?= $list['deskripsi_kategori'] ?></p>
                             </div>
                         </li>
                     <?php endforeach; ?>
@@ -97,7 +96,7 @@ Beranda
                 <div class="row">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
-                            <a href="" style="text-decoration: none">
+                            <a href="/subkategori" style="text-decoration: none">
                                 <div class="card shadow" style="margin-top: 40px;">
                                     <div class="card-body">
                                         <div class="row">
@@ -106,16 +105,14 @@ Beranda
                                             </div>
                                             <div class="col-8">
                                                 <h4 class="mb-1 text-success"><?= $list['judul_artikel'] ?></h4>
-                                                <h6><?= $list['id_kategori'] ?></h6>
-                                                <p class="mb-1">
-                                                    <?= $list['isi'] ?>
-                                                </p>
+                                                <h6><?= $list['judul_artikel'] ?></h6>
+                                                <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p>
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label class="text-body-tertiary"><?= $list['pembuat'] ?></label>
                                                     </div>
                                                     <div class="col-6 text-end">
-                                                        <label class="text-body-tertiary"><?= $list['tanggal_unggah'] ?></label>
+                                                        <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah'])); echo $formattedDate;?> </label>
                                                     </div>
                                                 </div>
                                             </div>

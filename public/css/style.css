@@ -78,6 +78,7 @@ ul{
     margin: 0 auto;
     list-style: none;
     margin-right: 10px;
+    display: flex;
 }
 ul li {
 	list-style: none;
@@ -356,11 +357,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 195px;
-    height: 170px;
+    width: 210px;
+    height: 190px;
     background:#fff;
     border-radius: 3px;
-    margin-right: 55px;
+    margin-right: 40px;
     margin-bottom: 20px;
     box-shadow: 0 0px 10px rgba(71,71,71,.2);
     -webkit-transition: .3s linear; 
@@ -1039,5 +1040,23 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     background-color: #03C988;
     height: 55px;
     width: 55px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.privacy {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /*========================Thank you=================
