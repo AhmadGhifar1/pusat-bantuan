@@ -48,7 +48,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/home.css">
 
-
 </head>
 
 <body>

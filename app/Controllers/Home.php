@@ -10,6 +10,8 @@ use App\Models\TentangkamiModel;
 use App\Models\TermsModel;
 use App\Models\TiketModel;
 
+use function PHPUnit\Framework\assertNotNull;
+
 class Home extends BaseController
 {
     public function index(): string
@@ -37,6 +39,8 @@ class Home extends BaseController
         $data['title'] = 'kategori';
         $kontak = new KontakModel();
         $data ['kontak'] = $kontak->findAll();
+        $kategori = new KategoriModel();
+        $data ['kategori'] = $kategori->where('id_parent',2)->findAll();
         return view('kategori/kategori',$data);
     }
     public function tiket()
@@ -73,6 +77,15 @@ class Home extends BaseController
         $kontak = new KontakModel();
         $data ['kontak'] = $kontak->findAll();
         return view('footer/termscondition',$data);
+    }
+    public function detailartikel()
+    {
+        $data['title'] = 'detailartikel';
+        $kontak = new KontakModel();
+        $data ['kontak'] = $kontak->findAll();
+        $artikel = new ArtikelModel();
+        $data ['artikel'] = $artikel->where('id_layout',2)->findAll();
+        return view('detailartikel',$data);
     }
 
     // public function results()

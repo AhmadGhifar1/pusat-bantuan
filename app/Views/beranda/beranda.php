@@ -71,7 +71,7 @@ Beranda
                         <li>
                             <div class="single-list-topics-content">
                                 <div class="single-list-topics-icon">
-                                    <i class="flaticon-restaurant"></i>
+                                <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px"/>
                                 </div>
                                 <h2><a href="/kategori"><?= $list['nama_kategori'] ?></a></h2>
                                 <p style="text-align: center;"><?= $list['deskripsi_kategori'] ?></p>
@@ -96,17 +96,16 @@ Beranda
                 <div class="row">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
-                            <a href="/subkategori" style="text-decoration: none">
+                            <a href="/detailartikel" style="text-decoration: none">
                                 <div class="card shadow" style="margin-top: 40px;">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-4 d-flex align-items-center">
-                                                <img src="https://fastly.picsum.photos/id/760/200/200.jpg?hmac=MlH81fLiPAKVmDN5qADWkd_299jLg9vp9uVnRn3uxp8" class="img-fluid rounded" alt="..." />
+                                                <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel']));?>" class="img-fluid rounded" alt="..." />
                                             </div>
                                             <div class="col-8">
-                                                <h4 class="mb-1 text-success"><?= $list['judul_artikel'] ?></h4>
-                                                <h6><?= $list['judul_artikel'] ?></h6>
-                                                <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p>
+                                                <h4 class="mb-1  text-success"><?= $list['judul_artikel'] ?></h4>
+                                                <!-- <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p> -->
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label class="text-body-tertiary"><?= $list['pembuat'] ?></label>

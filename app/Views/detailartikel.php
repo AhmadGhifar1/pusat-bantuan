@@ -1,7 +1,7 @@
 <?php $this->extend('layouts/home') ?>
 
 <?php $this->section('layouts') ?>
-Kategori
+Detail artikel
 <?php $this->endSection() ?>
 <?php $this->section('content') ?>
 
@@ -44,36 +44,54 @@ Kategori
     <!--list-topics end-->
 
     <!--works start -->
-
     <section id="works" class="works">
         <div class="container">
             <div class="section-header">
             </div><!--/.section-header-->
             <div class="works-content">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
-                        <?php foreach ($kategori as $list) : ?>
+                    <?php foreach ($artikel as $list) : ?>
+                        <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <!-- <td> -->
-                                        <!-- <h2><a href="#">lorem <span> ipsum </span> do</a></h2> -->
-                                        <!-- <li> -->
-                                        <div class="single-list-topics-content2">
-                                            <div class="single-list-topics-icon2">
-                                                <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px"/>
-                                            </div>
+                                        <div class="single-list-topics-content4">
                                             <div class="artikel1">
-                                                <h2><a href="/subkategori"><?= $list['nama_kategori'] ?></a></h2>
+                                                <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large;"><?= $list['judul_artikel'] ?></h1>
+                                                <h4 class="fw-bold" style="margin-top: 30px; color: #03C988;">GoldStep Klinik</h4>
+                                                <div>
+                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_1']));?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
+                                                    <h1 class="text" style="margin-left: 15px; margin-bottom: 20px;"><?= $list['isi'] ?></h1>
+                                                </div>
+                                                <div>
+                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_2']));?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
+                                                    <h1 class="text" style="margin-left: 15px; margin-bottom: 20px;"><?= $list['isi2'] ?></h1>
+                                                </div>
                                             </div>
                                         </div>
-                                        <!-- </li> -->
-                                        <!-- </td> -->
                                     </tr>
                                 </tbody>
                             </table>
-                        <?php endforeach; ?>
+                        </div>
+                    <?php endforeach; ?>
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <h2><a href="#">lorem <span> ipsum </span></a></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
+                            ut laboremagna aliqua.
+                        </p>
+                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                            read more
+                        </button>
                     </div>
+                    <h2><a href="#">lorem <span> ipsum</span> place</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
+                        ut laboremagna aliqua.
+                    </p>
+                    <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                        read more
+                    </button> -->
                 </div>
             </div>
         </div>
@@ -85,6 +103,7 @@ Kategori
     <!--explore start -->
 
     <!--footer start-->
+    <!-- </div> -->
 
     <!-- </div> -->
 
@@ -93,6 +112,7 @@ Kategori
             <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
         </div>
 
+    </div>
     </div><!--/.scroll-Top-->
 
     </footer><!--/.footer-->

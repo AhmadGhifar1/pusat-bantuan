@@ -28,4 +28,6 @@ class Artikel extends BaseController
 
         return view('beranda', ['list' => $list]);
     }
+
+    
 }
