@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class PrivacyModel extends Model
 {
-    protected $table            = 'privacie';
+    protected $table            = 'privacy_policy';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['isi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

@@ -60,13 +60,13 @@
     <section class="top-area sticky-top">
         <div class="header-area ">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Gold<span>Step</span></a>
+                <div class="container">
+                    <a class="navbar-brand" href="/beranda">Gold<span>Step</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" style="margin-left: 80%;">
+                        <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
                             <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/beranda') ? 'active' : ''; ?>"">
                                     <a class=" nav-link fs-6" aria-current="page" href="/beranda">Beranda</a>
                             </li>
@@ -193,6 +193,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
+    </div>
 </body>
 
 </html>

@@ -26,18 +26,29 @@ Tentangkami
         <?php endforeach; ?>
     </div>
 </div>
+<!-- <div class="col-md-4 col-sm-6">
+                        <h2><a href="#">lorem <span> ipsum </span></a></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
+                            ut laboremagna aliqua.
+                        </p>
+                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                            read more
+                        </button>
+                    </div>
+                    <h2><a href="#">lorem <span> ipsum</span> place</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt
+                        ut laboremagna aliqua.
+                    </p>
+                    <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                        read more
+                    </button> -->
 
+<!-- </div> -->
 
-    <!-- </div> -->
+<!-- </div> -->
 
-    <!-- </div> -->
-
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-        </div>
-
-    </div>
-</div>
+<!-- </div> -->
 
 <?php $this->endSection() ?>

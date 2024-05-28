@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class TermsModel extends Model
 {
-    protected $table            = 'terms';
+    protected $table            = 'terms_and_condition';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['isi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

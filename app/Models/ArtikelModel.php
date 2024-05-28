@@ -12,7 +12,18 @@ class ArtikelModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['judul_artikel','pembuat','isi','gambar_artikel','gambar_1','gambar_2','tanggal_unggah','id_kategori','id_layout','id_user'];
+    protected $allowedFields    = ['judul_artikel','pembuat','isi','isi2','gambar_artikel','gambar_1','gambar_2','tanggal_unggah','id_kategori','id_layout','id_user','status'];
+
+
+    public function getPublishedArticlesWithUser()
+    {
+        return $this->select('artikel.*, users.nama as user_name')
+            ->join('users', 'users.id = artikel.id_user')
+            ->where('artikel.status', 'publish')
+            ->orderBy('artikel.tanggal_unggah', 'DESC')
+            ->limit(6)
+            ->findAll();
+    }
 
     public function user()
     {

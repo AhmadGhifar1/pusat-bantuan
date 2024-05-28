@@ -71,9 +71,9 @@ Beranda
                         <li>
                             <div class="single-list-topics-content">
                                 <div class="single-list-topics-icon">
-                                <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px"/>
+                                    <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px" />
                                 </div>
-                                <h2><a href="/kategori"><?= $list['nama_kategori'] ?></a></h2>
+                                <h2><a href="/subkategori/<?= $list['id'] ?>"><?= $list['nama_kategori'] ?></a></h2>
                                 <p style="text-align: center;"><?= $list['deskripsi_kategori'] ?></p>
                             </div>
                         </li>
@@ -96,22 +96,22 @@ Beranda
                 <div class="row">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
-                            <a href="/detailartikel" style="text-decoration: none">
+                            <a href="/detailartikel1" style="text-decoration: none">
                                 <div class="card shadow" style="margin-top: 40px;">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-4 d-flex align-items-center">
-                                                <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel']));?>" class="img-fluid rounded" alt="..." />
+                                                <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel'])); ?>" class="img-fluid rounded" alt="..." />
                                             </div>
                                             <div class="col-8">
                                                 <h4 class="mb-1  text-success"><?= $list['judul_artikel'] ?></h4>
                                                 <!-- <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p> -->
                                                 <div class="row">
                                                     <div class="col-6">
-                                                        <label class="text-body-tertiary"><?= $list['pembuat'] ?></label>
+                                                        <label class="text-body-tertiary"><?= esc($list['user_name']) ?></label>
                                                     </div>
                                                     <div class="col-6 text-end">
-                                                        <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah'])); echo $formattedDate;?> </label>
+                                                        <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah'])); echo $formattedDate; ?> </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -168,44 +168,6 @@ Beranda
     <!-- </div> -->
 
     <!-- </div> -->
-
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-        </div>
-
-    </div><!--/.scroll-Top-->
-
-    </footer><!--/.footer-->
-    <!--footer end-->
-
-    <!-- Include all js compiled plugins (below), or include individual files as needed -->
-
-    <script src="assets/js/jquery.js"></script>
-
-    <!--modernizr.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    <!--bootstrap.min.js-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- bootsnav js -->
-    <script src="assets/js/bootsnav.js"></script>
-
-    <!--feather.min.js-->
-    <script src="assets/js/feather.min.js"></script>
-
-    <!-- counter js -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-
-    <!--slick.min.js-->
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-    <!--Custom JS-->
-    <script src="assets/js/custom.js"></script>
-
+    <!-- </div> -->
 </body>
 <?php $this->endSection() ?>
