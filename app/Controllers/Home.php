@@ -33,12 +33,7 @@ class Home extends BaseController
 
         $kategori = new KategoriModel();
         $data ['kategori'] = $kategori->where('id_parent',null)->findAll();
-
-        // $terms = new TermsModel();
-        // $data ['terms'] = $terms->findAll();
-
-        // $privacy = new PrivacyModel();
-        // $data ['privacy'] = $privacy->findAll();
+        
         return view('beranda/beranda',$data);
     }
     public function kategori()

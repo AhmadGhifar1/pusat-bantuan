@@ -12,7 +12,7 @@ Tiket
     <!-- top-area Start -->
     <!-- top-area Start -->
     <section id="home" class="welcome-hero">
-        <div class="container">
+        <div class="container-fluid">
             <div class="welcome-hero-txt">
                 <h2>PT GOLDSTEP INDONESIA <br> that all you need </h2>
             </div>
@@ -49,7 +49,7 @@ Tiket
 
     <!--works start -->
     <section id="works" class="works">
-        <div class="container">
+        <div class="container-fluid">
             <div class="section-header">
             </div><!--/.section-header-->
             <div class="works-content">

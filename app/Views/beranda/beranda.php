@@ -92,25 +92,25 @@ Beranda
             </div>
             <!--/.section-header-->
 
-            <div class="container-fluid mt-4">
-                <div class="row">
+            <div class="col-12">
+                <div class="row col-12">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
                             <a href="/detailartikel1" style="text-decoration: none">
-                                <div class="card shadow" style="margin-top: 40px;">
+                                <div class="card shadow" style="margin-top: 20px;">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-4 d-flex align-items-center">
+                                            <div class="col-4">
                                                 <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel'])); ?>" class="img-fluid rounded" alt="..." />
                                             </div>
                                             <div class="col-8">
-                                                <h4 class="mb-1  text-success"><?= $list['judul_artikel'] ?></h4>
+                                                <h4 class="mb-1 text-success"><?= $list['judul_artikel'] ?></h4>
                                                 <!-- <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p> -->
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label class="text-body-tertiary"><?= esc($list['user_name']) ?></label>
                                                     </div>
-                                                    <div class="col-6 text-end">
+                                                    <div class="col-12 text-end">
                                                         <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah'])); echo $formattedDate; ?> </label>
                                                     </div>
                                                 </div>

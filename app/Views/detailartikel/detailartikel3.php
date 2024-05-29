@@ -57,8 +57,7 @@ Detail artikel
                                     <tr>
                                         <div class="single-list-topics-content4">
                                             <div class="artikel1">
-                                                <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large;"><?= $list['judul_artikel'] ?></h1>
-                                                <h4 class="fw-bold" style="margin-top: 30px; color: #03C988;">GoldStep Klinik</h4>
+                                                <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large; margin-bottom: 30px"><?= $list['judul_artikel'] ?></h1>
                                                 <div style="border: 1px solid;">
                                                     <p>PPPPPPPPPP</p>
                                                     <h1 class="text" style="margin-left: 15px; margin-bottom: 20px; border-bottom: 2px #cccc;"><?= $list['isi'] ?></h1>

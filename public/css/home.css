@@ -279,39 +279,3 @@ nav input{
   font-weight: 600;
 }
 
-.kotak{
-    display: flex;
-    gap: 5px;
-}
-
-.kotakk{
-    display: flex;
-    gap: 5px;
-    margin-top: 10px;
-}
-.kotak1{
-    width: 50px;
-    height: 50px;
-    background-color: #242526;
-}
-.kotak2{
-    width: 50px;
-    height: 50px;
-    background-color: #242526;
-}
-.kotak3{
-    width: 50px;
-    height: 50px;
-    background-color: #242526;
-}
-.kotak4{
-    width: 50px;
-    height: 50px;
-    background-color: #242526;
-}
-.kotak5{
-    width: 50px;
-    height: 50px;
-    background-color: #242526;
-}
-

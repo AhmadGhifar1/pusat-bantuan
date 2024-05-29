@@ -250,6 +250,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     background-position:center;
     background-size:cover;
     text-align: center;
+    width: 100%;
     height:500px;
     z-index: 1;
 }
@@ -322,11 +323,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     align-items:  center;
     font-size:  14px;
     color:  #fff;
-    width:  100px;
+    width:  80px;
     height:  70px;
     background:  #03C988;
     text-transform:  capitalize;
-    margin-left: 600px;
+    margin-left: 620px;
     border-radius: 3px;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -453,7 +454,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 /*-------------------------------------
         6. Works
 --------------------------------------*/
-.works{padding: 0 0 40px; margin-right: 15px;}
+.works{padding: 0 0 40px;}
 .works-content {margin-top: 10px;}
 
 .single-how-works{

@@ -57,8 +57,7 @@ Detail artikel
                                     <tr>
                                         <div class="single-list-topics-content4">
                                             <div class="artikel1">
-                                                <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large;"><?= $list['judul_artikel'] ?></h1>
-                                                <h4 class="fw-bold" style="margin-top: 30px; color: #03C988;">GoldStep Klinik</h4>
+                                                <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large; margin-bottom: 30px;"><?= $list['judul_artikel'] ?></h1>
                                                 <div style="border: 1px solid;">
                                                     <img src="<?= base_url('uploads/icons/' . esc($list['gambar_1'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
                                                     <p>PPPPPPPP</p>

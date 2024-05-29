@@ -55,9 +55,6 @@ Subkategori
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <!-- <td> -->
-                                    <!-- <h2><a href="#">lorem <span> ipsum </span> do</a></h2> -->
-                                    <!-- <li> -->
                                     <div class="single-list-topics-content2">
                                         <div class="single-list-topics-icon2">
                                             <i class="flaticon-restaurant"></i>
@@ -82,8 +79,6 @@ Subkategori
                                             <h2><a href="/detailartikel3">Halo</a></h2>
                                         </div>
                                     </div>
-                                    <!-- </li> -->
-                                    <!-- </td> -->
                                 </tr>
                             </tbody>
                         </table>
@@ -91,14 +86,14 @@ Subkategori
                 </div>
             </div>
         </div>
-        </div><!--/.container-->
+        <!--/.container-->
 
     </section><!--/.works-->
     <!--works end -->
-  <!-- </div> -->
+    <!-- </div> -->
 
-  <!-- </div> -->
+    <!-- </div> -->
 
-  <!-- </div> -->
+    <!-- </div> -->
 </body>
 <?php $this->endSection() ?>

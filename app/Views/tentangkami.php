@@ -5,8 +5,11 @@ Tentangkami
 <?php $this->endSection() ?>
 <?php $this->section('content') ?>
 
+<body>
+    
+
 <div class="d-flex">
-    <div class="" style="margin-top: 180px; margin-left: 50px;">
+    <div class="col-3" style="margin-top: 180px; margin-left: 50px;">
         <h2>PT Goldstep Teknologi Indonesia</h2>
         <p>default</p>
     </div>
@@ -26,6 +29,7 @@ Tentangkami
         <?php endforeach; ?>
     </div>
 </div>
+</body>
 <!-- <div class="col-md-4 col-sm-6">
                         <h2><a href="#">lorem <span> ipsum </span></a></h2>
                         <p>

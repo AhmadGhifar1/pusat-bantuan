@@ -134,9 +134,9 @@
     <script src="assets/js/custom.js"></script>
 
     <div class="col-12">
-        <div class="col-1">
+        <div class="col-12">
             <?php foreach ($kontak as $list) : ?>
-                <div class="card" style="width: 1530px; height: 260px; border: 1px solid rgb(229, 234, 239);">
+                <div class="card" style="width: 100%; height: 100%; border: 1px solid rgb(229, 234, 239);">
                     <div class="card-body d-flex">
                         <div class="col-4">
                             <div class="col d-flex justify-content-center gap-3">
