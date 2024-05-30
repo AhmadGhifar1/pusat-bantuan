@@ -9,6 +9,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/beranda', 'Home::beranda');
 
+
 // artikel
 $routes->get('/artikel', 'Home::beranda');
 $routes->get('/detailartikel1', 'Home::detailartikel1');

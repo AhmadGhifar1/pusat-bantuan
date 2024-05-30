@@ -4,6 +4,9 @@
 Tiket
 <?php $this->endSection() ?>
 <?php $this->section('content') ?>
+<link href="<?php base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+<link href="<?php base_url('assets/css/style.css') ?>" rel="stylesheet">
+<link rel="stylesheet" href="<?= base_url('../assets/sweetalert2/dist/sweetalert2.min.css') ?>">
 
 <!-- l -->
 
@@ -12,7 +15,7 @@ Tiket
     <!-- top-area Start -->
     <!-- top-area Start -->
     <section id="home" class="welcome-hero">
-        <div class="container-fluid">
+        <div class="container">
             <div class="welcome-hero-txt">
                 <h2>PT GOLDSTEP INDONESIA <br> that all you need </h2>
             </div>
@@ -49,7 +52,7 @@ Tiket
 
     <!--works start -->
     <section id="works" class="works">
-        <div class="container-fluid">
+        <div class="container">
             <div class="section-header">
             </div><!--/.section-header-->
             <div class="works-content">
@@ -98,4 +101,7 @@ Tiket
     <!-- </div> -->
 
 </body>
+<script src="<?php base_url('assets/js/bootstrap.min.js') ?>"></script>
+<script src="<?= base_url('../assets/sweetalert2/dist/sweetalert2.all.min.js') ?>"></script>
+<?= session()->getFlashdata('sweetalert'); ?>
 <?php $this->endSection() ?>

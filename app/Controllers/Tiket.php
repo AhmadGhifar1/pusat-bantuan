@@ -27,16 +27,45 @@ class Tiket extends BaseController
     public function store()
     {
         $tiket = new TiketModel();
-
-        $data = [
-            'nama_kontak' => $this->request->getPost('nama_kontak'),
-            'email' => $this->request->getPost('email'),
-            'subjek' => $this->request->getPost('subjek'),
-            'deskripsi' => $this->request->getPost('deskripsi'),
+        $validation = \config\Services::validation();
+        $rulse = [
+            'nama_kontak' => 'required',
+            'email' => 'required',
+            'subjek' => 'required',
+            'deskripsi' => 'required',
         ];
+        if ($this->validate($rulse)) {
+            $tiket->save([
+                'nama_kontak' => $this->request->getPost('nama_kontak'),
+                'email' => $this->request->getPost('email'),
+                'subjek' => $this->request->getPost('subjek'),
+                'deskripsi' => $this->request->getPost('deskripsi'),
+            ]);
+            // $tiket->save($data);
 
-        $tiket->save($data);
-
-        return redirect()->to('/tiket');
+            session()->setFlashdata('sweetalert', "
+        <script>
+            Swal.fire({
+                title: 'Berhasil',
+                text: 'Anda Mengirimkan',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            });
+        </script>    
+        ");
+        return redirect()->back()->to('/tiket');
+        } else {
+            session()->setFlashdata('sweetalert', "
+        <script>
+            Swal.fire({
+                title: 'Berhasil',
+                text: 'Form Harus Di isi',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            });
+        </script>
+        ");
+        return redirect()->back()->to('/tiket');
+        }
     }
 }

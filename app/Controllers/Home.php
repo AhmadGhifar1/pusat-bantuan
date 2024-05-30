@@ -68,6 +68,7 @@ class Home extends BaseController
         $kategori = new KategoriModel();
         $data['kategori'] = $kategori->where('id_parent', $id_kategori)->findAll();
         return view('kategori/kategori', $data);
+        
     }
 
 

@@ -91,7 +91,25 @@ Beranda
                 <h2>Artikel Terbaru </h2>
             </div>
             <!--/.section-header-->
+            <style>
+                .text-limit {
+                    overflow: hidden;
+                    display: block;
+                    max-height: 3em;
+                    /* 3 baris dengan tinggi baris rata-rata 1.5em */
+                    line-height: 1.5em;
+                    /* Tinggi baris rata-rata */
+                    position: relative;
+                }
 
+                .text-limit::after {
+                    content: '...';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background: white;
+                }
+            </style>
             <div class="col-12">
                 <div class="row col-12">
                     <?php foreach ($artikel as $list) : ?>
@@ -104,14 +122,15 @@ Beranda
                                                 <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel'])); ?>" class="img-fluid rounded" alt="..." />
                                             </div>
                                             <div class="col-8">
-                                                <h4 class="mb-1 text-success"><?= $list['judul_artikel'] ?></h4>
+                                                <h4 class="mb-1 text-success text-limit" id="textContainer"><?= $list['judul_artikel'] ?></h4>
                                                 <!-- <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p> -->
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label class="text-body-tertiary"><?= esc($list['user_name']) ?></label>
                                                     </div>
                                                     <div class="col-12 text-end">
-                                                        <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah'])); echo $formattedDate; ?> </label>
+                                                        <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah']));
+                                                                                            echo $formattedDate; ?> </label>
                                                     </div>
                                                 </div>
                                             </div>

@@ -13,7 +13,7 @@ Tentangkami
         <h2>PT Goldstep Teknologi Indonesia</h2>
         <p>default</p>
     </div>
-    <img src="img/banner.jpg" style=" max-width: 50%; height: auto; margin-left: 400px;">
+    <img src="assets/img/banner.jpg" style=" max-width: 50%; height: auto; margin-left: 400px;">
 </div>
 <div class="container mt-5">
     <div class="col-12 d-flex flex-wrap gap-2 justify-content-center">

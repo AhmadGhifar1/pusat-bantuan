@@ -7,7 +7,8 @@ Subkategori
 
 <!-- l -->
 
-<body>
+
+<!-- <body> -->
     <!--welcome-hero start -->
     <!-- top-area Start -->
     <!-- top-area Start -->
@@ -95,5 +96,5 @@ Subkategori
     <!-- </div> -->
 
     <!-- </div> -->
-</body>
+<!-- </body> -->
 <?php $this->endSection() ?>
