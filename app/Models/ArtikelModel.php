@@ -25,6 +25,7 @@ class ArtikelModel extends Model
             ->findAll();
     }
 
+
     public function user()
     {
         return $this->belongsTo(UserModel::class, 'id_user', 'id');

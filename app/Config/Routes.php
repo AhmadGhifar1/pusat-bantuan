@@ -12,7 +12,7 @@ $routes->get('/beranda', 'Home::beranda');
 
 // artikel
 $routes->get('/artikel', 'Home::beranda');
-$routes->get('/detailartikel1', 'Home::detailartikel1');
+$routes->get('/artikeldetail/(:num)/(:num)', 'Home::artikeldetail/$1/$2');
 $routes->get('/detailartikel2', 'Home::detailartikel2');
 $routes->get('/detailartikel3', 'Home::detailartikel3');
 

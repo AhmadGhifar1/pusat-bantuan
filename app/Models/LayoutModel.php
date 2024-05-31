@@ -12,7 +12,7 @@ class LayoutModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_layout'];
+    protected $allowedFields    = ['nama_layout','gambar_layout'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

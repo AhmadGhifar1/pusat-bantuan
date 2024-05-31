@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ArtikelModel;
 use App\Models\KategoriModel;
 use App\Models\KontakModel;
+use App\Models\LayoutModel;
 use App\Models\PrivacyModel;
 use App\Models\TentangkamiModel;
 use App\Models\TermsModel;
@@ -97,33 +98,44 @@ class Home extends BaseController
         $data ['terms'] = $terms->findAll();
         return view('footer/termscondition',$data);
     }
-    public function detailartikel1()
+    public function artikeldetail($id, $id_layout)
     {
-        $data['title'] = 'detailartikel1';
+        $data['title'] = 'artikeldetail';
         $kontak = new KontakModel();
-        $data ['kontak'] = $kontak->findAll();
+        $data['kontak'] = $kontak->findAll();
+
+        $layout = new LayoutModel();
+        $data['layout'] = $layout->findAll();
+
         $artikel1 = new ArtikelModel();
-        $data ['artikel1'] = $artikel1->where('id_layout',1)->findAll();
-        return view('detailartikel/detailartikel1',$data);
+        $data['artikel1'] = $artikel1->where('id', $id)->findAll();
+        // Pilih view berdasarkan nilai $id_layout
+        if ($id_layout == 1) {
+            return view('detailartikel/artikeldetail1', $data);
+        } elseif ($id_layout == 2) {
+            return view('detailartikel/artikeldetail2', $data);
+        } elseif ($id_layout == 3) {
+            return view('detailartikel/artikeldetail3', $data);
+        }
     }
-    public function detailartikel2()
-    {
-        $data['title'] = 'detailartikel2';
-        $kontak = new KontakModel();
-        $data ['kontak'] = $kontak->findAll();
-        $artikel2 = new ArtikelModel();
-        $data ['artikel2'] = $artikel2->where('id_layout',2)->findAll();
-        return view('detailartikel/detailartikel2',$data);
-    }
-    public function detailartikel3()
-    {
-        $data['title'] = 'detailartikel3';
-        $kontak = new KontakModel();
-        $data ['kontak'] = $kontak->findAll();
-        $artikel3 = new ArtikelModel();
-        $data ['artikel3'] = $artikel3->where('id_layout',3)->findAll();
-        return view('detailartikel/detailartikel3',$data);
-    }
+    // public function detailartikel2()
+    // {
+    //     $data['title'] = 'detailartikel2';
+    //     $kontak = new KontakModel();
+    //     $data ['kontak'] = $kontak->findAll();
+    //     $artikel2 = new ArtikelModel();
+    //     $data ['artikel2'] = $artikel2->where('id_layout',2)->findAll();
+    //     return view('detailartikel/detailartikel2',$data);
+    // }
+    // public function detailartikel3()
+    // {
+    //     $data['title'] = 'detailartikel3';
+    //     $kontak = new KontakModel();
+    //     $data ['kontak'] = $kontak->findAll();
+    //     $artikel3 = new ArtikelModel();
+    //     $data ['artikel3'] = $artikel3->where('id_layout',3)->findAll();
+    //     return view('detailartikel/detailartikel3',$data);
+    // }
 
     // public function results()
     // {

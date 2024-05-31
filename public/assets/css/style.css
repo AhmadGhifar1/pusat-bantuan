@@ -286,8 +286,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     background: #fff;
     height: 70px;
     border-radius: 3px;
-    width: 80%;
-    margin-left: 100px;
+    width: auto;
+    /* margin-left: 0px; */
 }
 .single-welcome-hero-form {
     position: relative;
@@ -301,7 +301,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-welcome-hero-form input {
     margin-left: 10px;
     height: 70px;
-    width: 300px;
+    width: 100%;
     border: 0;
     background: transparent;
 }
@@ -322,12 +322,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     justify-content:  center;
     align-items:  center;
     font-size:  14px;
-    color:  #fff;
+    color:  #0c0c0c;
     width:  80px;
     height:  70px;
-    background:  #03C988;
+    background:  #fff;
     text-transform:  capitalize;
-    margin-left: 620px;
+    margin-left: 30px;
     border-radius: 3px;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -338,9 +338,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .welcome-hero-btn:hover{/*background: #fd4043;*/background: #03C988;}
 
 .welcome-hero-btn svg {
-    width:  14px;
+    width:  30px;
     height:  auto;
-    margin-left:  12px;
+    justify-content:  center;
+    align-items:  center;
 }
 
 /*-------------------------------------
@@ -351,19 +352,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     top: -98px;
     z-index: 1;
 }
-.list-topics-content ul li { display: inline-block;}
+.list-topics-content ul li { display: inline-block; margin-left: 30px;}
 
 .single-list-topics-content{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 210px;
+    width: 200px;
     height: 190px;
     background:#fff;
     border-radius: 3px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     box-shadow: 0 0px 10px rgba(71,71,71,.2);
     -webkit-transition: .3s linear; 
     -moz-transition:.3s linear; 

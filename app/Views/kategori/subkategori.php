@@ -8,7 +8,7 @@ Subkategori
 <!-- l -->
 
 
-<!-- <body> -->
+<body>
     <!--welcome-hero start -->
     <!-- top-area Start -->
     <!-- top-area Start -->
@@ -61,7 +61,7 @@ Subkategori
                                             <i class="flaticon-restaurant"></i>
                                         </div>
                                         <div class="artikel1">
-                                            <h2><a href="/detailartikel1">BPJS</a></h2>
+                                            <h2><a href="/artikeldetail">BPJS</a></h2>
                                         </div>
                                     </div>
                                     <div class="single-list-topics-content2">
@@ -96,5 +96,6 @@ Subkategori
     <!-- </div> -->
 
     <!-- </div> -->
-<!-- </body> -->
+</body>
+<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 <?php $this->endSection() ?>

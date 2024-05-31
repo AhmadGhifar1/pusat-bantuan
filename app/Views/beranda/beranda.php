@@ -28,7 +28,7 @@ Beranda
                         </div> -->
                         <div class="welcome-hero-serch">
                             <button class="welcome-hero-btn" onclick="window.location.href='#'">
-                                <i class="fa fa-search" style="font-size: 36px; color: #FFFFFF;"></i>
+                                <i class="" style="font-size: 36px; color: #FFFFFF;"></i>
                                 <i data-feather="search"></i>
                             </button>
                         </div>
@@ -68,7 +68,7 @@ Beranda
             <div class="list-topics-content">
                 <ul>
                     <?php foreach ($kategori as $list) : ?>
-                        <li>
+                        <li sty>
                             <div class="single-list-topics-content">
                                 <div class="single-list-topics-icon">
                                     <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px" />
@@ -114,7 +114,7 @@ Beranda
                 <div class="row col-12">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
-                            <a href="/detailartikel1" style="text-decoration: none">
+                            <a href="/artikeldetail/<?= $list['id'] ?>/<?= $list['id_layout'] ?>" style="text-decoration: none">
                                 <div class="card shadow" style="margin-top: 20px;">
                                     <div class="card-body">
                                         <div class="row">

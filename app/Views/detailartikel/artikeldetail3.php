@@ -1,4 +1,8 @@
-<?php $this->extend('layouts/home') ?>
+<?php
+
+use PHPUnit\TextUI\Configuration\Php;
+
+$this->extend('layouts/home') ?>
 
 <?php $this->section('layouts') ?>
 Detail artikel
@@ -50,7 +54,8 @@ Detail artikel
             </div> -->
             <div class="works-content">
                 <div class="row">
-                    <?php foreach ($artikel2 as $list) : ?>
+                    <?php foreach ($artikel1 as $list) : ?>
+
                         <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
                             <table class="table">
                                 <tbody>
@@ -60,13 +65,13 @@ Detail artikel
                                                 <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large; margin-bottom: 30px;"><?= $list['judul_artikel'] ?></h1>
                                                 <div style="border: 1px solid;">
                                                     <img src="<?= base_url('uploads/icons/' . esc($list['gambar_1'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
-                                                    <p>PPPPPPPP</p>
+                                                    <!-- <p>PPPPPPPPP</p> -->
                                                     <h1 class="text" style="margin-left: 15px; margin-bottom: 20px; border-bottom: 2px #cccc"><?= $list['isi'] ?></h1>
                                                 </div>
                                                 <div style="border: 1px solid;">
-                                                    <p>PPPPPPPPP</p>
-                                                    <h1 class="text" style="margin-left: 15px; margin-bottom: 20px;"><?= $list['isi2'] ?></h1>
                                                     <img src="<?= base_url('uploads/icons/' . esc($list['gambar_2'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
+                                                    <!-- <p>PPPPPPPPP</p> -->
+                                                    <h1 class="text" style="margin-left: 15px; margin-bottom: 20px;"><?= $list['isi2'] ?></h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,4 +107,5 @@ Detail artikel
     <!--works end -->
 
 </body>
+<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 <?php $this->endSection() ?>

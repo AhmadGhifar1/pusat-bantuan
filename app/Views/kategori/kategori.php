@@ -2,7 +2,7 @@
 
 <?php $this->section('layouts') ?>
 Kategori
-<?php $this->endSection() ?>
+<?php $this->endSection('') ?>
 <?php $this->section('content') ?>
 
 <!-- l -->
@@ -89,4 +89,5 @@ Kategori
     <!-- </div> -->
 
 </body>
+<script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 <?php $this->endSection() ?>
