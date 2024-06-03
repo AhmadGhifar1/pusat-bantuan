@@ -16,7 +16,7 @@ Beranda
             <div class="welcome-hero-txt" style="margin-top: 20px;">
                 <h2>PT GOLDSTEP INDONESIA <br> that all you need </h2>
             </div>
-            <div class="welcome-hero-serch-box">
+            <div class="welcome-hero-serch-box" style="margin-top: 50px;">
                 <div class="welcome-hero-form">
                     <div class="single-welcome-hero-form">
                         <!-- <h3>what?</h3> -->
@@ -41,16 +41,16 @@ Beranda
     <!--welcome-hero end -->
 
     <!--list-topics start -->
-    <div id="carouselExample" class="carousel slide">
+    <!-- <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <img src="..." class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <img src="..." class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <img src="..." class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -61,17 +61,17 @@ Beranda
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
     <section id="list-topics" class="list-topics">
         <div class="container">
             <div class="list-topics-content">
                 <ul>
                     <?php foreach ($kategori as $list) : ?>
-                        <li sty>
+                        <li>
                             <div class="single-list-topics-content">
                                 <div class="single-list-topics-icon">
-                                    <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="60px" />
+                                    <img src="<?= base_url('uploads/icons/' . esc($list['ikon'])); ?>" class="img-fluid rounded" alt="..." width="50px" />
                                 </div>
                                 <h2><a href="/subkategori/<?= $list['id'] ?>"><?= $list['nama_kategori'] ?></a></h2>
                                 <p style="text-align: center;"><?= $list['deskripsi_kategori'] ?></p>
@@ -111,21 +111,21 @@ Beranda
                 }
             </style>
             <div class="col-12">
-                <div class="row col-12">
+                <div class="row">
                     <?php foreach ($artikel as $list) : ?>
                         <div class="col-4">
                             <a href="/artikeldetail/<?= $list['id'] ?>/<?= $list['id_layout'] ?>" style="text-decoration: none">
                                 <div class="card shadow" style="margin-top: 20px;">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-3">
                                                 <img src="<?= base_url('uploads/icons/' . esc($list['gambar_artikel'])); ?>" class="img-fluid rounded" alt="..." />
                                             </div>
                                             <div class="col-8">
-                                                <h4 class="mb-1 text-success text-limit" id="textContainer"><?= $list['judul_artikel'] ?></h4>
+                                                <h4 class="mb-2 text-success text-limit" id="textContainer"><?= $list['judul_artikel'] ?></h4>
                                                 <!-- <p class="mb-1" style="text-overflow: ellipsis;"><?= $list['isi'] ?></p> -->
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-8">
                                                         <label class="text-body-tertiary"><?= esc($list['user_name']) ?></label>
                                                     </div>
                                                     <div class="col-12 text-end">

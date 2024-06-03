@@ -20,7 +20,7 @@ Detail artikel
             <div class="welcome-hero-txt">
                 <h2>PT GOLDSTEP INDONESIA <br> that all you need </h2>
             </div>
-            <div class="welcome-hero-serch-box">
+            <div class="welcome-hero-serch-box" style="margin-top: 50px;">
                 <div class="welcome-hero-form">
                     <div class="single-welcome-hero-form">
                         <!-- <h3>what?</h3> -->
