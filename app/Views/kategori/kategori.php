@@ -28,7 +28,6 @@ Kategori
                         </div> -->
                         <div class="welcome-hero-serch">
                             <button class="welcome-hero-btn" onclick="window.location.href='#'">
-                                <i class="fa fa-search" style="font-size: 36px; color: #FFFFFF;"></i>
                                 <i data-feather="search"></i>
                             </button>
                         </div>

@@ -29,7 +29,6 @@ Subkategori
                         </div> -->
                         <div class="welcome-hero-serch">
                             <button class="welcome-hero-btn" onclick="window.location.href='#'">
-                                <i class="fa fa-search" style="font-size: 36px; color: #FFFFFF;"></i>
                                 <i data-feather="search"></i>
                             </button>
                         </div>
@@ -46,10 +45,10 @@ Subkategori
 
     <!--works start -->
 
-    <section id="works" class="works">
+    <!-- <section id="works" class="works">
         <div class="container">
             <div class="section-header">
-            </div><!--/.section-header-->
+            </div>
             <div class="works-content">
                 <div class="row">
                     <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
@@ -87,9 +86,8 @@ Subkategori
                 </div>
             </div>
         </div>
-        <!--/.container-->
 
-    </section><!--/.works-->
+    </section> -->
     <!--works end -->
     <!-- </div> -->
 

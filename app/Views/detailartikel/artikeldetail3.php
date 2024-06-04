@@ -63,22 +63,13 @@ Detail artikel
                                         <div class="single-list-topics-content4">
                                             <div class="artikel1">
                                                 <h1 class="fw-bold" style="margin-top: 10px; font-size: x-large; margin-bottom: 30px;"><?= $list['judul_artikel'] ?></h1>
-                                                <div class="col-8">
-                                                    <label class="text-body-tertiary"><?= esc($list['user_name']) ?></label>
-                                                </div>
                                                 <div>
-                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_1'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
-                                                    <!-- <p>PPPPPPPPP</p> -->
                                                     <h1 class="text" style="margin-left: 15px; margin-bottom: 20px; border-bottom: 2px #cccc"><?= $list['isi'] ?></h1>
+                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_1'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
                                                 </div>
                                                 <div>
-                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_2'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
-                                                    <!-- <p>PPPPPPPPP</p> -->
                                                     <h1 class="text" style="margin-left: 15px; margin-bottom: 20px;"><?= $list['isi2'] ?></h1>
-                                                </div>
-                                                <div class="col-12 text-end">
-                                                    <label class="text-body-tertiary"><?php $formattedDate = date("d-m-Y", strtotime($list['tanggal_unggah']));
-                                                                                        echo $formattedDate; ?> </label>
+                                                    <img src="<?= base_url('uploads/icons/' . esc($list['gambar_2'])); ?>" style="justify-content: center; width: 100%; height: 20%; margin-bottom: 10px;">
                                                 </div>
                                             </div>
                                         </div>
