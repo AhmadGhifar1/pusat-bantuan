@@ -17,36 +17,36 @@
 
     <title><?= $this->renderSection('layouts') ?></title>
     <!-- For favicon png -->
-    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+    <link rel="shortcut icon" type="image/icon" href="<?= base_url('assets/logo/favicon.png')?>" />
 
     <!--font-awesome.min.css-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/font-awesome.min.css')?>">
 
     <!--linear icon css-->
-    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/linearicons.css')?>">
 
     <!--animate.css-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/animate.css')?>">
 
     <!--flaticon.css-->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css')?>">
 
     <!--slick.css-->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/slick.css')?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/slick-theme.css')?>">
 
     <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css')?>">
 
     <!-- bootsnav -->
-    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootsnav.css')?>">
 
     <!--style.css-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 
     <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css')?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/home.css')?>">
 
 </head>
 
@@ -113,25 +113,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--bootstrap.min.js-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="<?= base_url('assets/js/bootstrap.min.js')?>"></script>
 
     <!-- bootsnav js -->
-    <script src="assets/js/bootsnav.js"></script>
+    <script src="<?= base_url('assets/js/bootsnav.js')?>"></script>
 
     <!--feather.min.js-->
-    <script src="assets/js/feather.min.js"></script>
+    <script src="<?= base_url('assets/js/feather.min.js')?>"></script>
 
     <!-- counter js -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
+    <script src="<?= base_url('assets/js/jquery.counterup.min.js')?>"></script>
+    <script src="<?= base_url('assets/js/waypoints.min.js')?>"></script>
 
     <!--slick.min.js-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="<?= base_url('assets/js/slick.min.js')?>"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!--Custom JS-->
-    <script src="assets/js/custom.js"></script>
+    <script src="<?= base_url('assets/js/custom.js')?>"></script>
 
     <div class="col-12">
         <div class="col-12">
